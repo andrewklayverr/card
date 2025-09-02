@@ -36,7 +36,7 @@ export default function CardComponent() {
           </button>
         ))}
       </div>
-      <div className="selected-rating">
+      <div className="selected-rating-display">
         {selectedRating
           ? `You selected ${selectedRating} out of 5`
           : "No rating selected"}
