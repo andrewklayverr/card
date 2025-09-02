@@ -1,15 +1,15 @@
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css'
 import CardComponent from "./components/CardComponent";
 
 function App() {
   return (
-    <>
-      <div>
-        <CardComponent />
-      </div>
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<CardComponent />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
